@@ -5,76 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Time tracking dashboard</title>
+ 
 </head>
 <body>
+  <div class="mainContainer">
+    <!-- PROFILE BLOCK -->
+    <div class="profileBlock">
+      <div class="profileUpperPart">
+        <img class="profilePicture" src="./images/image-jeremy.png" alt="" srcset="">
+        <p>Report for<br/> <span class="profileName">Jeremy Robson</span></p>
+      </div>
+      <div class="profileBottomPart">
+        <ul>
+          <li class="listElement" id="daily">Daily</li>
+          <li class="listElement" id="weekly">Weekly</li>
+          <li class="listElement" id="monthly">Monthly</li>
+        </ul>
+      </div>
 
-  Report for
-  Jeremy Robson
+    <!-- SMALL BLOCKS -->
+      <div class="timeBlock work">
+        <div class="timeBlockUpperPart"></div>
+        <div class="timeBlockBottomPart">
+          <p class="blockType">Work</p>
+          <img class="dots" src="./images/icon-ellipsis.svg" alt="" srcset="">
+          <p class="hours">32hrs</p>
+          <p class="lastWeekHours">Last Week - 36hrs</p>
+        </div>
+      </div>
+      
+      <div class="timeBlock play">
+        <div class="timeBlockUpperPart"></div>
+        <div class="timeBlockBottomPart">
+          <p class="blockType">Play</p>
+          <img class="dots" src="./images/icon-ellipsis.svg" alt="" srcset="">
+          <p class="hours">32hrs</p>
+          <p class="lastWeekHours">Last Week - 36hrs</p>
+        </div>
+      </div>
 
-  Daily
-  Weekly
-  Monthly
+      <div class="timeBlock study">
+        <div class="timeBlockUpperPart"></div>
+        <div class="timeBlockBottomPart">
+          <p class="blockType">Study</p>
+          <img class="dots" src="./images/icon-ellipsis.svg" alt="" srcset="">
+          <p class="hours">32hrs</p>
+          <p class="lastWeekHours">Last Week - 36hrs</p>
+        </div>
+      </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+      <div class="timeBlock exercise">
+        <div class="timeBlockUpperPart"></div>
+        <div class="timeBlockBottomPart">
+          <p class="blockType">Exercise</p>
+          <img class="dots" src="./images/icon-ellipsis.svg" alt="" srcset="">
+          <p class="hours">32hrs</p>
+          <p class="lastWeekHours">Last Week - 36hrs</p>
+        </div>
+      </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+      <div class="timeBlock social">
+        <div class="timeBlockUpperPart"></div>
+        <div class="timeBlockBottomPart">
+          <p class="blockType">Social</p>
+          <img class="dots" src="./images/icon-ellipsis.svg" alt="" srcset="">
+          <p class="hours">32hrs</p>
+          <p class="lastWeekHours">Last Week - 36hrs</p>
+        </div>
+      </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+      <div class="timeBlock selfcare">
+        <div class="timeBlockUpperPart"></div>
+        <div class="timeBlockBottomPart">
+          <p class="blockType">Self Care</p>
+          <img class="dots" src="./images/icon-ellipsis.svg" alt="" srcset="">
+          <p class="hours">32hrs</p>
+          <p class="lastWeekHours">Last Week - 36hrs</p>
+        </div>
+      </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Tony</a>.
   </div>
+
+<script src="script.js" defer></script>
 </body>
 </html>
+
+
+

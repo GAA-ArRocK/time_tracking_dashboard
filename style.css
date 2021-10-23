@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root{
+
+    /* ### Primary */
+
+    --Blue: hsl(246, 80%, 60%);
+
+    --Light-red-work: hsl(15, 100%, 70%);
+    --Soft-blue-play-: hsl(195, 74%, 62%);
+    --Light-red-study: hsl(348, 100%, 68%);
+    --Lime-green-exercise-: hsl(145, 58%, 55%);
+    --Violet-social: hsl(264, 64%, 52%);
+    --Soft-orange-self-care: hsl(43, 84%, 65%);
+
+    /* ### Neutral */
+
+    --Very-dark-blue: hsl(226, 43%, 10%);
+    --Dark-blue: hsl(235, 46%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Very-dark-blue);
+    display: block;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.mainContainer {
+    max-width: 370px;
+    display: grid;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.profileBlock {
+    margin-bottom: 3rem;
+}
+
+.profileUpperPart {
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    background-color: var(--Blue);
+    color: var(--Pale-Blue);
+    justify-content:left;
+    align-items: center;
+    padding: 1.5rem 0.5rem;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.profilePicture {
+    height: 70px;
+    width: 70px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+p .profileName {
+    font-size: 22px;
+    font-weight: 300;
+    color: white;
+}
+
+.profileBottomPart {
+    position: relative;
+    top: -5px;
+    background-color: var(--Dark-blue);
+    border-radius: 0 0 10px 10px;
+    color: var(--Desaturated-blue);
+    font-weight: 400;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    word-spacing: 2rem;
+
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    z-index: 3;
+}
+
+.profileBottomPart ul {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.profileBottomPart ul li {
+    display: inline;
+}
+
+li:hover {
+    color:white;
+    transition: color 0.3s;
+}
+
+.timeBlockUpperPart {
+    position: relative;
+    background-color: white;
+    height: 50px;
+    top: 15px;
+    z-index: -1;
+    border-radius: 15px 15px 0 0;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 15px);
+    background-position-y: -10px;
+}
+
+.timeBlockBottomPart {
+    background-color: var(--Dark-blue);
+    border-radius: 15px;
+    padding: 1.5rem 1.5rem;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0.5rem;
+}
+
+.lastWeekHours {
+    color: var(--Pale-Blue);
+}
+
+.timeBlockBottomPart .dots, .lastWeekHours{
+    text-align: right;
+}
+
+.timeBlockBottomPart .blockType {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.timeBlock.work .timeBlockUpperPart {
+    background-color: var(--Light-red-work);
+    background-image: url('./images/icon-work.svg');
+}
+
+.timeBlock.play .timeBlockUpperPart {
+    background-color: var(--Soft-blue-play-);
+    background-image: url('./images/icon-play.svg');
+}
+
+.timeBlock.study .timeBlockUpperPart {
+    background-color: var(--Light-red-study);
+    background-image: url('./images/icon-study.svg');
+}
+
+.timeBlock.exercise .timeBlockUpperPart {
+    background-color: var(--Lime-green-exercise-);
+    background-image: url('./images/icon-exercise.svg');
+}
+
+.timeBlock.social .timeBlockUpperPart {
+    background-color: var(--Violet-social);
+    background-image: url('./images/icon-social.svg');
+}
+
+.timeBlock.selfcare .timeBlockUpperPart {
+    background-color: var(--Soft-orange-self-care);
+    background-image: url('./images/icon-self-care.svg');
+}
+
+.hours {
+    font-size: 30px;
+}
+
+.dots {
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 110px;
+}
+
+.attribution {
+    font-size: 10px;
+    text-align: center;
+    color: var(--Pale-Blue);
+}
+.attribution a {
+    font-size: 10px;
+    color: hsl(228, 45%, 44%);
+}
